@@ -4,7 +4,7 @@ import Config
 config :notes_collab, NotesCollab.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: "localhost",
+  hostname: System.get_env("DATABASE_HOST") || "localhost",
   database: "notes_collab_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
