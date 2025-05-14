@@ -18,11 +18,18 @@ docker compose up -d --build
 Shutdown and delete containers:
 
 ```
-docker compose -f docker-compose.yaml down
+docker compose -f docker-compose.yml down
 ```
 
 Stop the containers (no delete):
 
 ```
-docker compose -f docker-compse.yaml stop
+docker compose -f docker-compse.yml stop
+```
+
+Start the frontend
+
+```
+cd frontend
+npm start
 ```
